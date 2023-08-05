@@ -1,0 +1,40 @@
+.warp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #001529;
+
+  .form_card {
+    height: 300px;
+    width: 400px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 0 6px rgba(0,21,41,.35);
+    border-radius: 4px;
+    padding: 35px;
+
+    span {
+      font-size: 18px;
+      color: #000000;
+    }
+
+    .formBox {
+      margin-top: 20px;
+      :deep(.el-form-item__label) {
+        font-size: 15px;
+        color: rgba($color: #000000, $alpha: 0.8);
+      }
+
+      :deep(.el-input__wrapper.is-focus) {
+        box-shadow: 0 0 0 1px #1677ff inset;
+      }
+    }
+
+    .submitBtn {
+      width: 100%;
+      height: 40px;
+      margin-top: 15px;
+    }
+  }
+}

@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 5555"
+    "build:dev": "vite build --mode dev",
+    "build:pre": "vite build --mode pre",
+    "build:prod": "vite build --mode prod",
+    "preview:dev": "npm run build:dev && vite preview --port 5555",
+    "preview:pre": "npm run build:pre && vite preview --port 5555",
+    "preview:prod": "npm run build:prod && vite preview --port 5555"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.22.9",

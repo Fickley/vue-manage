@@ -27,7 +27,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH),
   routes,
 })
 

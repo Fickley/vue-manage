@@ -1,11 +1,17 @@
+<script setup>
+  import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+</script>
+
 <template>
-  <div class="appBox">
-    <router-view v-slot="{ Component, route }">
-      <transition name="el-fade-in" mode="out-in">
-        <component :is="Component"/>
-      </transition>
-    </router-view>
-  </div>
+  <el-config-provider :locale="zhCn">
+    <div class="appBox">
+      <router-view v-slot="{ Component, route }">
+        <transition name="el-fade-in" mode="out-in">
+          <component :is="Component" :key="route.path"/>
+        </transition>
+      </router-view>
+    </div>
+  </el-config-provider>
 </template>
 
 <style>

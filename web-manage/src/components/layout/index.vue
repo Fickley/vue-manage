@@ -7,7 +7,7 @@
     <div>
       <Menus />
     </div>
-    <div>
+    <div class="rightContent">
       <router-view v-slot="{ Component, route }">
         <transition :name="route.meta.transition || 'fade'">
           <component :is="Component" :key="route.path"/>

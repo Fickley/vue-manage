@@ -1,4 +1,9 @@
 .layoutBox {
   display: flex;
   flex-direction: row;
+
+  .rightContent {
+    flex: 1;
+    display: flex;
+  }
 }

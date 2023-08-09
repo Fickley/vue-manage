@@ -1,27 +1,20 @@
 <template>
   <el-menu
-    default-active="2"
     class="el-menu-vertical-demo"
     :collapse="isCollapse"
+    background-color="#545c64"
+    text-color="#fff"
     @open="handleOpen"
     @close="handleClose"
   >
-    <el-sub-menu index="1">
+    <el-sub-menu index="1" background-color="#545c64">
       <template #title>
         <span>Navigator One111</span>
       </template>
-      <el-menu-item-group>
-        <template #title><span>Group One1111</span></template>
+      <el-menu-item-group background-color="#545c64">
         <el-menu-item index="1-1">item one</el-menu-item>
         <el-menu-item index="1-2">item two</el-menu-item>
       </el-menu-item-group>
-      <el-menu-item-group title="Group Two">
-        <el-menu-item index="1-3">item three</el-menu-item>
-      </el-menu-item-group>
-      <el-sub-menu index="1-4">
-        <template #title><span>item four</span></template>
-        <el-menu-item index="1-4-1">item one</el-menu-item>
-      </el-sub-menu>
     </el-sub-menu>
     <el-menu-item index="2">
       <template #title>Navigator Two</template>

@@ -15,6 +15,7 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.22.9",
     "axios": "^1.4.0",
+    "echarts": "^5.4.3",
     "element-plus": "^2.3.8",
     "eslint": "^8.46.0",
     "js-md5": "^0.7.3",

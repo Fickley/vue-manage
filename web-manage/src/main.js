@@ -15,3 +15,4 @@ console.log('aaaaa=>', import.meta.env)
 app.config.errorHandler = (err, instance, info) => {
   console.log('err====>', err, instance, info)
 }
+export default app
